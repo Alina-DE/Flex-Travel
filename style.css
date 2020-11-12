@@ -58,6 +58,7 @@ label {
 
 input {
     padding: 6px;
+    max-width: 170px;
     flex: 1;
 }
 
@@ -133,6 +134,8 @@ input {
     }
 
     input {
+        overflow: hidden;
+        max-width: none;
         flex: 6;
     }
     .btn {
