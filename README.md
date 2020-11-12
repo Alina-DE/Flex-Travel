@@ -1,5 +1,5 @@
 # Alina's LIVE version
-https://alina-de.github.io/Flex-Travel/index.html
+https://alina-de.github.io/Flex-Travel
 ***
 
 # Travel Destination Form
