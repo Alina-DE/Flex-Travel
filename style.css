@@ -1,0 +1,149 @@
+/* my reset css */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* my styling starts here */
+
+body {
+    background: url(images/dino-reichmuth-A5rCN8626Ck-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 450px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.h1 {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 8px 8px 8px black;
+    padding-bottom: 20px;
+    flex: 1 100%;
+}
+
+.forms {
+    padding: 10px 0;
+    display: flex;
+    flex: 1 100%;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+
+.text {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+label {
+    background-color: red;
+    padding: 5px;
+    flex: 1;
+}
+
+input {
+    padding: 6px;
+    flex: 1;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.btn-1:hover, .btn-2:hover {
+    cursor: pointer;
+}
+
+.btn-1 {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid red;
+    color: red;
+    font-weight: bold;
+}
+.btn-1:hover {
+    background-color: red;
+    border: 2px solid red;
+    color: white;
+}
+
+.btn-2 {
+    padding: 5px 10px;
+    background-color: red;
+    border: 2px solid red;
+    color: white;
+    font-weight: bold;
+}
+.btn-2:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid red;
+    color: red;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    body {
+        background: url(images/dino-reichmuth-A5rCN8626Ck-unsplash-small.jpg);
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        width: 90vw;
+    }
+
+    .h1 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .forms {
+        flex-direction: column;
+    }
+
+    .text {
+        padding-bottom: 10px;
+    }
+
+    label {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    input {
+        flex: 6;
+    }
+    .btn {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-1, .btn-2 {
+        width: 150px;
+        margin: 0 0 10px 0;
+        font-size: 1.2rem;
+    } 
+}
+
+
