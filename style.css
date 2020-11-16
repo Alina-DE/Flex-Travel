@@ -17,86 +17,74 @@ body {
     font-family: sans-serif;
 }
 
-.container {
-    width: 450px;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+form {
+    height: 100%;
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.h1 {
-    font-size: 1.5rem;
+.container {
+    width: 450px;
+    color: white;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 2.5rem;
     color: rgba(255, 255, 255, 0.8);
-    text-shadow: 8px 8px 8px black;
+    text-shadow: 6px 6px 10px black;
     padding-bottom: 20px;
     flex: 1 100%;
 }
 
-.forms {
-    padding: 10px 0;
-    display: flex;
-    flex: 1 100%;
-    justify-content: space-between;
-    flex-flow: row nowrap;
-}
-
-.text {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
 label {
     background-color: red;
-    padding: 5px;
-    flex: 1;
+    padding-left: 6px;
 }
 
 input {
     padding: 6px;
-    max-width: 170px;
-    flex: 1;
+    width: 170px;
 }
 
 .btn {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px 0;
-    font-weight: bold;
+    padding-top: 10px;
+    margin: 10px 0 0 auto;
 }
 
 .btn-1:hover, .btn-2:hover {
     cursor: pointer;
 }
 
-.btn-1 {
+.btn-1, .btn-2 {
     padding: 5px 10px;
+    font-weight: bold;
+    border: 2px solid red;
+}
+
+.btn-1 {
     margin-right: 10px;
     background-color: rgba(255, 255, 255, 0.8);
-    border: 2px solid red;
     color: red;
-    font-weight: bold;
 }
 .btn-1:hover {
     background-color: red;
-    border: 2px solid red;
     color: white;
 }
 
 .btn-2 {
-    padding: 5px 10px;
     background-color: red;
-    border: 2px solid red;
     color: white;
-    font-weight: bold;
 }
+
 .btn-2:hover {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 2px solid red;
     color: red;
 }
 
@@ -113,40 +101,33 @@ input {
 
     .container {
         width: 300px;
+        flex-flow: column nowrap;
     }
 
-    .h1 {
-        font-size: 1rem;
+    h1 {
         text-align: center;
-    }
-
-    .forms {
-        flex-direction: column;
-    }
-
-    .text {
-        padding-bottom: 10px;
+        font-size: 2rem;
     }
 
     label {
         font-size: 1.2rem;
         font-weight: bold;
+        margin-bottom: 10px;
+        width: 100%;
     }
 
     input {
-        overflow: hidden;
-        max-width: none;
-        flex: 6;
+        width: 78%;
+        float: right;
     }
+
     .btn {
-        flex-direction: column;
-        align-items: center;
+        margin: 0;
     }
     .btn-1, .btn-2 {
+        display: block;
         width: 150px;
-        margin: 0 0 10px 0;
+        margin: 10px auto;
         font-size: 1.2rem;
     } 
 }
-
-
